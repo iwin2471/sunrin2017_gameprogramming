@@ -37,7 +37,10 @@ void getShap(){
 }
 
 void result(){
-	while (betting > money) cout << "배팅할금액 입력: "; cin >> betting;
+	while (betting > money) {
+		cout << "배팅할금액 입력: ";
+		cin >> betting;
+    }
 	num[2] <= (num[0] > num[1] ? num[0] : num[1]) && num[2] >= (num[0] < num[1] ? num[0] : num[1]) ? cout << (money += + betting) : cout << (money -= betting);
 	if (money < 0) { cout << "파산"; exit(0); }
 }
